@@ -7,14 +7,28 @@
 //
 
 import UIKit
-
+import FirebaseDatabase
+import Firebase
 class ViewController: UIViewController {
-
+    
+    //var ref: DatabaseReference!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+      //  ref = Database.database().reference()
+        
+       // self.ref.child("users").child("uilsalah").setValue(nil)
+        
+      //  Databasereference.users(uid: "uid3abc").reference().setValue("whiteboard")
+        
     }
-
+    
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

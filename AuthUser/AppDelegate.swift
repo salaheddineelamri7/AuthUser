@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        FirebaseApp.configure()
+        
+        
+        
+       // Databasereference.users(uid: "uid3abc").reference().setValue("whiteboard")
+        
+       /* let adminValue = [
+            "username": "admin",
+            "uid": "admin"
+        ]
+        
+        Databasereference.users(uid: "admin").reference().setValue(adminValue)
+         
+         let user1 = User(uid: "rando12345", username: "ductran", profileImage: UIImage(named: "u")!, email: "salah@gmail.com", fullName: "salaheddine")
+         
+         user1.save { (error) in
+         print(error)
+         }
+         
+         
+         */
+        
+        
+        
+        
         return true
     }
 
